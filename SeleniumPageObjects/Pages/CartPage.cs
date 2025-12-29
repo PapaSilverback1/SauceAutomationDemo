@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SeleniumPageObjects
+namespace SauceDemoPageObjects.Pages
 {
 
     public class CartPage

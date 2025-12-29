@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SeleniumPageObjects
+namespace SauceDemoPageObjects.Pages
 {
     public class LoginPage
     {
@@ -16,15 +16,15 @@ namespace SeleniumPageObjects
         private By errorMessageField = By.XPath("//*[@id=\"login_button_container\"]/div/form/div[3]/h3");
         public LoginPage(IWebDriver _driver)
         {
-            this.driver = _driver;
+            driver = _driver;
         }
 
-        public void navigateTo(String url)
+        public void navigateTo(string url)
         {
-            this.driver.Navigate().GoToUrl(url);
+            driver.Navigate().GoToUrl(url);
         }
 
-        public MainPage login(String username, String password)
+        public MainPage login(string username, string password)
         {
             driver.FindElement(usernameField).SendKeys(username);
             driver.FindElement(passwordField).SendKeys(password);
