@@ -50,6 +50,8 @@ namespace TestProjectSelenium
 
             }
             //just a comment
+            //another comment to test
+
             [Test, Order(2)]
             public void SuccessfulLoginTest()
             {
